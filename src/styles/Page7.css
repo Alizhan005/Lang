@@ -1,0 +1,382 @@
+.vocabulary-page {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-top: 64.8px;
+}
+
+.vocabulary-content {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.vocabulary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.vocabulary-header-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.vocabulary-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #00a63e 0%, #10b981 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vocabulary-header-text h1 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #101828;
+  margin: 0;
+}
+
+.vocabulary-header-text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4a5565;
+  margin: 0;
+}
+
+.add-word-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #0066cc;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  height: 40px;
+  color: white;
+  font-family: 'Arimo', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-word-button:hover {
+  background: #0052a3;
+  transform: translateY(-1px);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: white;
+  border: 0.8px solid rgba(0, 102, 204, 0.15);
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #101828;
+  margin: 0 0 8px 0;
+}
+
+.stat-number-green {
+  color: #00a63e;
+}
+
+.stat-number-blue {
+  color: #155dfc;
+}
+
+.stat-number-purple {
+  color: #9810fa;
+}
+
+.stat-label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4a5565;
+  margin: 0;
+}
+
+.search-container {
+  margin-bottom: 24px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 448px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #64748b;
+}
+
+.search-input {
+  width: 100%;
+  height: 36px;
+  background: #f8fafc;
+  border: 0.8px solid transparent;
+  border-radius: 10px;
+  padding: 4px 12px 4px 40px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1a2e;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  background: white;
+}
+
+.search-input::placeholder {
+  color: #64748b;
+}
+
+.vocabulary-filters {
+  margin-bottom: 24px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 0;
+  background: #f0f4f8;
+  border-radius: 16px;
+  padding: 3px;
+  width: fit-content;
+}
+
+.filter-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3.5px 8.8px;
+  border: none;
+  border-radius: 16px;
+  background: transparent;
+  font-family: 'Arimo', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1a2e;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab.active {
+  background: white;
+  border: 0.8px solid transparent;
+}
+
+.filter-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 26843500px;
+  background: #e5e7eb;
+  color: #1a1a2e;
+  font-size: 12px;
+  line-height: 16px;
+  min-width: 20px;
+}
+
+.filter-badge-blue {
+  background: #bedbff;
+}
+
+.filter-badge-green {
+  background: #b9f8cf;
+}
+
+.vocabulary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vocabulary-card {
+  background: white;
+  border: 0.8px solid rgba(0, 102, 204, 0.15);
+  border-radius: 16px;
+  padding: 16.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.vocabulary-card:hover {
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.vocabulary-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vocabulary-word-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vocabulary-word-kazakh {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #101828;
+  margin: 0;
+}
+
+.vocabulary-word-english {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4a5565;
+  margin: 0;
+}
+
+.vocabulary-word-phonetic {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6a7282;
+  font-style: italic;
+  margin: 0;
+}
+
+.vocabulary-example {
+  background: #eff6ff;
+  border: 0.8px solid #dbeafe;
+  border-radius: 12px;
+  padding: 12.8px;
+}
+
+.vocabulary-example p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #364153;
+  margin: 0;
+}
+
+.vocabulary-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.status-button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.learned-button {
+  background: #00a63e;
+}
+
+.learned-button:hover {
+  background: #008236;
+  transform: scale(1.05);
+}
+
+.learning-button {
+  background: white;
+  border: 0.8px solid rgba(0, 102, 204, 0.15);
+}
+
+.learning-button:hover {
+  background: #f9fafb;
+  border-color: #0066cc;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2.8px 8.8px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.learned-badge {
+  background: #d1fae5;
+  border: 0.8px solid #b9f8cf;
+  color: #008236;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vocabulary-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .search-input-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vocabulary-header-text h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .filter-tabs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .vocabulary-card {
+    flex-direction: column;
+  }
+
+  .vocabulary-item-actions {
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}

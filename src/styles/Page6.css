@@ -1,0 +1,321 @@
+.pronunciation-page {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-top: 64.8px;
+}
+
+.pronunciation-content {
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.pronunciation-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.pronunciation-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ad46ff 0%, #155dfc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pronunciation-header-text h1 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #101828;
+  margin: 0;
+}
+
+.pronunciation-header-text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4a5565;
+  margin: 0;
+}
+
+.pronunciation-main {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.words-list-card {
+  width: 355px;
+  background: white;
+  border: 0.8px solid rgba(0, 102, 204, 0.15);
+  border-radius: 16px;
+  padding: 24.8px;
+  height: 803px;
+  display: flex;
+  flex-direction: column;
+}
+
+.words-list-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #1a1a2e;
+  margin: 0 0 24px 0;
+}
+
+.words-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.word-item {
+  border: 1.6px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 17.6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.word-item:hover {
+  border-color: #0066cc;
+  background: #f9fafb;
+}
+
+.word-item.selected {
+  border-color: #0066cc;
+  background: #eff6ff;
+}
+
+.word-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.word-kazakh {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #101828;
+  margin: 0;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 2.8px 8.8px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.level-badge.beginner {
+  background: #d1fae5;
+  border: 0.8px solid #b9f8cf;
+  color: #008236;
+}
+
+.level-badge.intermediate {
+  background: #fef9c2;
+  border: 0.8px solid #fff085;
+  color: #a65f00;
+}
+
+.level-badge.advanced {
+  background: #ffe2e2;
+  border: 0.8px solid #ffc9c9;
+  color: #c10007;
+}
+
+.word-english {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4a5565;
+  margin: 0 0 4px 0;
+}
+
+.word-phonetic {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6a7282;
+  font-style: italic;
+  margin: 0;
+}
+
+.practice-area-card {
+  flex: 1;
+  background: white;
+  border: 0.8px solid rgba(0, 102, 204, 0.15);
+  border-radius: 16px;
+  padding: 0.8px;
+  min-height: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-placeholder {
+  width: 100%;
+  padding: 48px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.placeholder-icon {
+  width: 64px;
+  height: 64px;
+  color: #9ca3af;
+}
+
+.placeholder-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #101828;
+  margin: 0;
+}
+
+.placeholder-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4a5565;
+  margin: 0;
+  max-width: 500px;
+}
+
+.practice-active {
+  width: 100%;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.practice-word-display {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.practice-word-kazakh {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #101828;
+  margin: 0;
+}
+
+.practice-word-english {
+  font-size: 24px;
+  line-height: 32px;
+  color: #4a5565;
+  margin: 0;
+}
+
+.practice-word-phonetic {
+  font-size: 18px;
+  line-height: 24px;
+  color: #6a7282;
+  font-style: italic;
+  margin: 0;
+}
+
+.practice-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.record-button,
+.stop-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.record-button {
+  background: linear-gradient(135deg, #ad46ff 0%, #155dfc 100%);
+}
+
+.record-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 16px rgba(173, 70, 255, 0.3);
+}
+
+.stop-button {
+  background: #dc2626;
+}
+
+.stop-button:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 16px rgba(220, 38, 38, 0.3);
+}
+
+.practice-feedback {
+  text-align: center;
+}
+
+.feedback-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6a7282;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .pronunciation-main {
+    flex-direction: column;
+  }
+
+  .words-list-card {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+
+  .practice-area-card {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pronunciation-header-text h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .practice-word-kazakh {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .practice-word-english {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

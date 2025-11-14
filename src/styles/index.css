@@ -1,0 +1,92 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    color: #101828;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+/* Common Button Styles */
+.btn {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 0 24px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: linear-gradient(180deg, #0066cc 0%, #3b82f6 100%);
+    color: white;
+    box-shadow: 0px 10px 15px -3px rgba(43, 127, 255, 0.3), 0px 4px 6px -4px rgba(43, 127, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 12px 20px -3px rgba(43, 127, 255, 0.4), 0px 6px 8px -4px rgba(43, 127, 255, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    color: #1a1a2e;
+    border: 0.8px solid rgba(0, 102, 204, 0.15);
+}
+
+.btn-secondary:hover {
+    background: #f9fafb;
+}
+
+/* Form Input Styles */
+.form-input {
+    background: #f8fafc;
+    border: 0.8px solid transparent;
+    border-radius: 10px;
+    height: 36px;
+    padding: 4px 12px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #1a1a2e;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0066cc;
+    background: white;
+    box-shadow: 0px 0px 0px 3px rgba(0, 102, 204, 0.1);
+}
+
+.form-input::placeholder {
+    color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+    }
+}
+
