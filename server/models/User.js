@@ -13,6 +13,7 @@ const User = sequelize.define(
     fullName: {
       type: DataTypes.STRING,
       allowNull: false,
+      field: 'name', // Маппинг на существующее поле 'name' в БД
       validate: {
         notEmpty: true,
         len: [2, 255],
@@ -29,6 +30,7 @@ const User = sequelize.define(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
+      field: 'password_hash', // Маппинг на существующее поле 'password_hash' в БД
       validate: {
         len: [8, 255],
       },
@@ -44,6 +46,7 @@ const User = sequelize.define(
     streak: {
       type: DataTypes.INTEGER,
       defaultValue: 0,
+      field: 'day_streak', // Маппинг на существующее поле 'day_streak' в БД
     },
     lastActiveDate: {
       type: DataTypes.DATE,
@@ -72,6 +75,8 @@ const User = sequelize.define(
   {
     tableName: 'users',
     timestamps: true,
+    createdAt: 'created_at', // Маппинг на существующее поле 'created_at'
+    updatedAt: false, // Поле updatedAt может отсутствовать в старой структуре
     hooks: {
       beforeCreate: async (user) => {
         if (user.password) {
