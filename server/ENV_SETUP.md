@@ -27,14 +27,10 @@ FRONTEND_URL=http://localhost:5173
 
 ## Важные замечания:
 
-1. **MySQL Configuration**: Убедитесь, что MySQL запущен и доступен
-   - Создайте базу данных: `CREATE DATABASE langbridge;`
-   - Укажите правильные учетные данные в `.env`
+1. **MySQL Configuration**: 
+   - Убедитесь, что MySQL запущен и доступен
+   - **База данных уже должна существовать** - приложение только подключается к ней
+   - Укажите правильные учетные данные в `.env` (DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT)
+   - Убедитесь, что таблицы уже созданы в базе данных
 2. **JWT_SECRET**: В продакшене используйте сложный случайный ключ
 3. **FRONTEND_URL**: Укажите URL вашего фронтенд приложения
-
-## Создание базы данных
-
-```sql
-CREATE DATABASE langbridge CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```

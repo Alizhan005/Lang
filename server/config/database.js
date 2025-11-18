@@ -22,12 +22,8 @@ const connectDB = async () => {
   try {
     await sequelize.authenticate();
     console.log('MySQL Connected successfully');
-    
-    // Sync models (в продакшене лучше использовать миграции)
-    if (process.env.NODE_ENV !== 'production') {
-      await sequelize.sync({ alter: false }); // alter: true для автоматического обновления схемы
-      console.log('Database models synchronized');
-    }
+    // База данных уже существует, только подключаемся к ней
+    // Таблицы должны быть созданы заранее или через миграции
   } catch (error) {
     console.error('Unable to connect to the database:', error);
     process.exit(1);
